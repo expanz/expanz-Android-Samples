@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="expanz_site">SALESAPP</string>
+	<string name="expanz_default_session_url">http://test.expanz.com/ESADemoService/ESAService.svc/restish//CreateSessionX</string>
+	<string name="expanz_default_exec_url">http://test.expanz.com/ESADemoService/ESAService.svc/restish//ExecX</string>
+	<string name="app_name">Calc Demo</string>
+</resources>

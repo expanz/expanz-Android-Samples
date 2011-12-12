@@ -1,0 +1,16 @@
+<expanz>
+<activities>
+	<activity name="" style=""
+		form="com.expanz.DefaultExpanzLoginActivity" createActivity="false" entryPoint="true"
+		default="false" isList="false">
+		<layout contentView="default_login" rootLayout="defaultLoginRoot" />
+		<messageHandler type="alert" />
+	</activity>
+	<activity name="ESA.Sales.Calc" style=""
+		form="com.expanz.ESASalesCalc" createActivity="true" entryPoint="false"
+		default="true" isList="false">
+		<layout contentView="esa_sales_calc" rootLayout="esasalescalc" />
+		<messageHandler type="alert" />
+	</activity>
+</activities>
+</expanz>

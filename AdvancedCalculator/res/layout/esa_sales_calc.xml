@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+    android:id="@+id/esasalescalc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- widgets -->
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_span="2"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#666666" />
+
+                <com.expanz.widget.MethodButtonEx
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    expanz:method_name="Add"
+                    android:text="+"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:width="50dp" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#666666" />
+
+                <com.expanz.widget.MethodButtonEx
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    expanz:method_name="Divide"
+                    android:text="/"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:width="50dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_span="2"
+                android:background="#EB9C00" />
+        </TableRow>
+
+        <TableRow >
+
+            <com.expanz.widget.TextViewEx
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="20dp"
+                expanz:field_id="Op1"
+                android:textSize="12sp" />
+
+            <com.expanz.widget.EditTextEx
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                expanz:field_id="Op1"
+                android:text="" />
+        </TableRow>
+
+        <TableRow >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_span="2"
+                android:background="#3D3D3D" />
+        </TableRow>
+
+        <TableRow >
+
+            <com.expanz.widget.TextViewEx
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                expanz:field_id="Op2"
+                android:textSize="12sp" />
+
+            <com.expanz.widget.EditTextEx
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                expanz:field_id="Op2"
+                android:text="" />
+        </TableRow>
+
+        <TableRow >
+
+            <com.expanz.widget.TextViewEx
+                android:text="Enter values"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+              	android:paddingLeft="10dp"
+              	android:paddingRight="10dp"
+              	android:paddingBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_span="2"
+                expanz:field_id="Result"
+                android:textSize="32sp"
+                expanz:use_value="true" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
