@@ -1,0 +1,43 @@
+<expanz>
+<activities>
+	<activity name="" style=""
+		form="com.expanz.DefaultExpanzLoginActivity" createActivity="false" entryPoint="true"
+		default="false" isList="false">
+		<layout contentView="default_login" rootLayout="defaultLoginRoot" />
+	</activity>
+	<activity name="Sales.SalesOrder" style=""
+		form="com.expanz.SalesSalesOrder" createActivity="true" entryPoint="false"
+		default="false" isList="false">
+		<layout contentView="sales_salesorder" rootLayout="salessalesorder" />
+	</activity>
+	<activity name="Sales.SalesOrder" style="Browse"
+		form="com.expanz.SalesSalesOrderBrowse" createActivity="true" entryPoint="false"
+		default="false" isList="true">
+		<listView name="sales_salesorder_browse" />
+		<dataPublication populateMethod="ListMe" query="" useThumbNailImages="true" context="" />
+	</activity>
+	<activity name="Sales.Customer" style=""
+		form="com.expanz.SalesCustomer" createActivity="true" entryPoint="false"
+		default="false" isList="false">
+		<layout contentView="sales_customer" rootLayout="salescustomer" />
+	</activity>
+	<activity name="Sales.Customer" style="Browse"
+		form="com.expanz.SalesCustomerBrowse" createActivity="true" entryPoint="false"
+		default="true" isList="true">
+		<messageHandler type="alert" />
+		<listView name="sales_customer_browse" />
+		<dataPublication populateMethod="ListMe" query="" useThumbNailImages="true" context="" />
+	</activity>
+	<activity name="Sales.ItemForSale" style=""
+		form="com.expanz.SalesItemForSale" createActivity="true" entryPoint="false"
+		default="false" isList="false">
+		<layout contentView="sales_itemforsale" rootLayout="salesitemforsale" />
+	</activity>
+	<activity name="Sales.ItemForSale" style="Browse"
+		form="com.expanz.SalesItemForSaleBrowse" createActivity="true" entryPoint="false"
+		default="false" isList="true">
+		<listView name="sales_itemforsale_browse" />
+		<dataPublication populateMethod="ListMe" query="" useThumbNailImages="true" context="" />
+	</activity>
+</activities>
+</expanz>

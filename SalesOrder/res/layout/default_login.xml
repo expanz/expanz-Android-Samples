@@ -1,0 +1,9 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+	android:id="@+id/defaultLoginRoot"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+<!-- widgets -->
+<com.expanz.widget.DefaultLoginEx android:id="@+id/defaultLoginEx1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" />
+</ScrollView>

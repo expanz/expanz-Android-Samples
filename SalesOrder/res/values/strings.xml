@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="expanz_site">SALES</string>
+	<string name="expanz_server_url">http://expanzdemo.cloudapp.net:8080/esaservice.svc/restish</string>
+	<string name="expanz_default_session_url">http://expanzdemo.cloudapp.net:8080/esaservice.svc/restish/CreateSessionX</string>
+	<string name="expanz_default_exec_url">http://expanzdemo.cloudapp.net:8080/esaservice.svc/restish/ExecX</string>
+	<string name="app_name">Sales Orders Demo</string>
+</resources>

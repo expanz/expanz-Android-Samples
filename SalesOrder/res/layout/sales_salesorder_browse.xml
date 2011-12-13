@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- widgets -->
+
+    <com.expanz.widget.ImageViewEx
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="left"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_border"
+        expanz:field_id="Client.CustomerPhoto"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp" />
+
+    <TableLayout  android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:stretchColumns="*">
+
+        <TableRow >
+
+            <com.expanz.widget.TextViewEx
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                expanz:field_id="Client.FullCustomerName"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow >
+
+            <com.expanz.widget.TextViewEx
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                expanz:field_id="Lines.Quantity"
+                android:layout_gravity="left"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:textSize="14sp" />
+
+            <com.expanz.widget.TextViewEx
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                expanz:field_id="OrderDate"
+                android:layout_gravity="right"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
