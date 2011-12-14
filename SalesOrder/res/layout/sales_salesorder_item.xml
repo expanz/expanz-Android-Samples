@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+    android:id="@+id/salessalesorderitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!-- widgets -->
+
+    <com.expanz.widget.TextViewEx
+     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        expanz:field_id="Item.Name"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.expanz.widget.TextViewEx
+       
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       	android:gravity="right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        expanz:field_id="Quantity"
+        android:paddingLeft="5dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

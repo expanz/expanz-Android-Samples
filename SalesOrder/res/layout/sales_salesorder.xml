@@ -1,9 +1,134 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
-	android:id="@+id/salessalesorder"
-	android:layout_width="fill_parent"
-	android:layout_height="wrap_content" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+    android:id="@+id/salessalesorder"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
 
-<!-- widgets -->
+    <!-- widgets -->
 
-</ScrollView>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            expanz:field_id="OrderDate"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            expanz:field_id="OrderDate"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            expanz:use_value="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            expanz:field_id="Total"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            expanz:field_id="Total"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            expanz:use_value="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal" >
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            expanz:field_id="SearchCode"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.expanz.widget.TextViewEx
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            expanz:field_id="SearchCode"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            expanz:use_value="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginBottom="15dp"
+        android:layout_span="2"
+        android:background="#ff9933" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expanz="http://schemas.android.com/apk/res/com.expanz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Item"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:text="Qty"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="3dp"
+        android:layout_span="2"
+        android:background="#ff9933" />
+
+    <com.expanz.widget.ListViewEx
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expanz:context_object="Lines"
+        expanz:row_layout="@+layout/sales_salesorder_item" />
+
+</LinearLayout>

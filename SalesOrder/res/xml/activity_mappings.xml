@@ -9,10 +9,13 @@
 		form="com.expanz.SalesSalesOrder" createActivity="true" entryPoint="false"
 		default="false" isList="false">
 		<layout contentView="sales_salesorder" rootLayout="salessalesorder" />
+		<messageHandler type="alert" />
+		<dataPublication populateMethod="ListMe" query="" context="Lines" />
 	</activity>
 	<activity name="Sales.SalesOrder" style="Browse"
 		form="com.expanz.SalesSalesOrderBrowse" createActivity="true" entryPoint="false"
 		default="false" isList="true">
+		<messageHandler type="alert" />
 		<listView name="sales_salesorder_browse" />
 		<dataPublication populateMethod="ListMe" query="" useThumbNailImages="true" context="" />
 	</activity>
@@ -32,10 +35,12 @@
 		form="com.expanz.SalesItemForSale" createActivity="true" entryPoint="false"
 		default="false" isList="false">
 		<layout contentView="sales_itemforsale" rootLayout="salesitemforsale" />
+		<messageHandler type="alert" />
 	</activity>
 	<activity name="Sales.ItemForSale" style="Browse"
 		form="com.expanz.SalesItemForSaleBrowse" createActivity="true" entryPoint="false"
 		default="false" isList="true">
+		<messageHandler type="alert" />
 		<listView name="sales_itemforsale_browse" />
 		<dataPublication populateMethod="ListMe" query="" useThumbNailImages="true" context="" />
 	</activity>
